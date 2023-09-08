@@ -1,0 +1,8 @@
+@startuml
+!include ./Interfaces.puml
+!include ./Interface1.puml
+!include ./Program.puml
+!include ./obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.puml
+!include ./obj/Debug/net7.0/DemoInterface.GlobalUsings.g.puml
+!include ./obj/Debug/net7.0/DemoInterface.AssemblyInfo.puml
+@enduml

@@ -1,0 +1,49 @@
+@startuml
+!pragma layout smetana
+class Human {
+    + GetLanguage() : string
+    + GetBirthDate() : string
+    + GetWalkSpeed() : string
+    + GetLeftTime() : string
+}
+class Dog {
+    + GetBirthDate() : string
+    + GetLeftTime() : string
+    + GetWalkSpeed() : string
+}
+class Parrot {
+    + GetBirthDate() : string
+    + GetFlySpeed() : string
+    + GetLanguage() : string
+    + GetLeftTime() : string
+    + GetWalkSpeed() : string
+}
+class myTri {
+    + Area : int <<get>> <<set>>
+    + Parimeter : int <<get>> <<set>>
+    + type : string <<get>> <<set>>
+    + myTri(xs:List<int>, ys:List<int>)
+    + GetArea() : string
+    + GetPerimeter() : string
+    + GetTriangleType() : string
+}
+class myRec {
+    + GetArea() : string
+    + GetEdgeNumbers() : int
+    + GetPerimeter() : string
+}
+ITalk <|-- Human
+IWalk <|-- Human
+IDeath <|-- Human
+IBirth <|-- Human
+IBirth <|-- Dog
+IWalk <|-- Dog
+IDeath <|-- Dog
+IBirth <|-- Parrot
+IFly <|-- Parrot
+ITalk <|-- Parrot
+IDeath <|-- Parrot
+IWalk <|-- Parrot
+ITringular <|-- myTri
+IRectangular <|-- myRec
+@enduml

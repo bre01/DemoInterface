@@ -1,0 +1,10 @@
+@startuml
+interface IGeometry {
+}
+interface ITringular {
+}
+interface IRectangular {
+}
+IGeometry <|-- ITringular
+IGeometry <|-- IRectangular
+@enduml

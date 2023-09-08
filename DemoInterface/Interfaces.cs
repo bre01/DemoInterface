@@ -6,12 +6,21 @@ using System.Threading.Tasks;
 
 namespace DemoInterface
 {
-    internal class Interfaces
+    public interface IGeometry
     {
+        string GetArea();
+        string GetPerimeter();
+    }
+    public interface ITringular : IGeometry
+    {
+        string GetTriangleType(); 
+    }
+    public interface IRectangular : IGeometry
+    {
+        int GetEdgeNumbers();
     }
     public interface IBirth
     {
-        string Birth();
         string GetBirthDate();
     }
     public interface IWalk
@@ -19,9 +28,19 @@ namespace DemoInterface
         string GetWalkSpeed();
     }
 
-    public interface ITalk:IBirth
+    public interface ITalk
     {
         string GetLanguage();
     }
+    public interface IFly
+    {
+        string GetFlySpeed();
+    }
+    public interface IDeath
+    {
+        string GetLeftTime();
+    }
+
+
 
 }

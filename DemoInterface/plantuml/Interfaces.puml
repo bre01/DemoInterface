@@ -1,0 +1,21 @@
+@startuml
+!pragma layout smetana
+interface IGeometry {
+}
+interface ITringular {
+}
+interface IRectangular {
+}
+interface IBirth {
+}
+interface IWalk {
+}
+interface ITalk {
+}
+interface IFly {
+}
+interface IDeath {
+}
+IGeometry <|-- ITringular
+IGeometry <|-- IRectangular
+@enduml
