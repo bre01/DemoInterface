@@ -1,5 +1,4 @@
 @startuml
-!pragma layout smetana
 class Human {
     + GetLanguage() : string
     + GetBirthDate() : string
